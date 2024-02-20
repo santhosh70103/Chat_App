@@ -87,6 +87,7 @@ res.status(201).json({ success: true, message: otp });
 route.post('/friends', async (req, res) => {
   try {
     const { email } = req.body;
+    console.log(email)
     const user = await userSchema.findOne({ email });
 
     if (!user) {

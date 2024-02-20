@@ -1,36 +1,31 @@
-import '../CSS/Navbar.css'
-import profile from '../assets/react.svg'
-import { SlOptionsVertical } from "react-icons/sl";
-import { IoVideocam } from "react-icons/io5";
-import { FaPhoneAlt } from "react-icons/fa";
+import profile from "../assets/profile.jpg"
+import { BsThreeDotsVertical } from "react-icons/bs"
+import { GrAttachment } from "react-icons/gr";
 
 
-const Navbar=()=>{
-    return(
-        <div className="navbar">
-            <div className='profile'>
-                <img src={profile}/>
-            </div>
-            <div className="header">
-                <div className="header-text">
-                    <h1>Surya Prakash</h1>
-                    <p>Last seen at 09:30 am</p>
+
+const Navbar = () => {
+    return (
+        <>
+
+            <div className=" ml-[24%] flex justify-between w-[76%] pt-3 bg-gray-500 h-full">
+                <div className=" flex space-x-3 items ">
+                    <div className="flex pb-5  " >
+                        <img className="w-9 h-9 rounded-full" src={profile} alt="" />
+                    </div>
+                    <div className="flex flex-col">
+                        <span>FriendName</span>
+                        <span>Status</span>
+                    </div>
                 </div>
-                <div className="options">
-                    <div className="option">
-                        <FaPhoneAlt />
-                    </div>
-                    <div className="option">
-                        <IoVideocam />
-                    </div>
-                    <div className="option">
-                        <SlOptionsVertical />
-                    </div>
-                    
+                <div className="flex pt-1 gap-8 pr-10">
+                    <span><GrAttachment style={{ "fontSize": "20px" }} /></span>
+                    <span><BsThreeDotsVertical style={{ "fontSize": "20px" }} /></span>
                 </div>
             </div>
-            
-        </div>
+
+        </>
     )
 }
+
 export default Navbar;

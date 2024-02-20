@@ -4,6 +4,7 @@ import './App.css'
 import Home from './Components/Home'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Otp from './Components/Otp'
+import Menu from './Components/Menu'
 
 
 const App=()=>{
@@ -14,7 +15,7 @@ const App=()=>{
         <Routes>
           <Route path='/' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
-          <Route path='/home' element={<Home/>}/>
+          <Route path='/home' element={<Home />}/>
           <Route path='/otp' element={<Otp/>}/>
         </Routes>
       </BrowserRouter>

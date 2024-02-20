@@ -4,6 +4,7 @@
     background-color: rgb(238, 216, 171);
     position: absolute;
     padding-top: 10px;
+    overflow: auto;
   }
   
   .menu_input {
