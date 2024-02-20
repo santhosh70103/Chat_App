@@ -49,6 +49,9 @@ const Chat = () => {
                         <span className=""><IoSend style={{ "fontSize": "20px" }} /></span>
                         <span className=""><IoMdMic style={{ "fontSize": "20px" }} /></span>
                     </div>
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
 
