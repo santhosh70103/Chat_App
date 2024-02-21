@@ -51,46 +51,46 @@ const Registration = () => {
   },[otp]);
 
   return (
-    <div className="reg-whole-container">
-      <div className="registration-container">
-      <h2 className='reg-h2'>Registration</h2>
-      <label>
+    <div className="flex justify-center items-center h-[100vh]">
+      <div className="border p-16 rounded-3xl w-[30%]">
+      <h2 className='text-center text-green-600 text-[110%] p-5'>Registration</h2>
+      <label className='flex flex-col font-serif'>
         Username:
         <input
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="registration-input"
+          className="h-10 border-b border-b-black focus:outline-none focus:border-b-blue-400 "
         />
       </label>
       <br />
-      <label>
+      <label className='flex flex-col font-serif'>
         Password:
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="registration-input"
+          className="h-10 border-b border-b-black focus:outline-none focus:border-b-blue-400"
         />
       </label>
       <br />
-      <label>
+      <label className='flex flex-col font-serif'>
         Email:
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="registration-input"
+          className="h-10 border-b border-b-black focus:outline-none focus:border-b-blue-400"
         />
       </label>
       <br />
-      <label>
+      <label className='flex flex-col font-serif'>
         Full Name:
         <input
           type="text"
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
-          className="registration-input"
+          className="h-10 border-b border-b-black focus:outline-none focus:border-b-blue-400"
         />
       </label>
       <br />

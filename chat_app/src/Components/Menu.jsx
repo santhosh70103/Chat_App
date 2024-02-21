@@ -19,13 +19,17 @@ const Menu = () => {
   const [search, Setsearch] = useState("")
 
   useEffect(() => {
-    console.log(Location.state?.Data.friends)
+   
     Setfriends(Location.state.Data.friends)
   }, [])
 
-  useEffect(() => {
+  const handleChange=(e)=>
+  {
+    var s=e.target.value   
+    
+  }
 
-  }, [friends])
+
 
 
 
@@ -43,7 +47,7 @@ const Menu = () => {
           </div>
         </div>
 
-        <div className="h-10 w-[100%]"><input className="w-[100%] h-[100%] pl-2" onChange={(e) => { }} type="text" placeholder="search " /></div>
+        <div className="h-10 w-[100%]"><input className="w-[100%] h-[100%] pl-2" onChange={(e) => { handleChange(e)}} type="text" placeholder="search " /></div>
         <div className="flex ">
 
           <div className=" text-start  grid  overflow-y-auto max-h-[80vh]" style={{
